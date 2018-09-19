@@ -20,4 +20,13 @@ public class Vehicle {
         return this.fuelTank;
     }
 
+    public void tank(int amount){
+        this.fuelTank+= amount;
+    }
+
+    public void drive(String car) {
+        drainFuel();
+        System.out.println(car + "Is driving");
+    }
+
 }
